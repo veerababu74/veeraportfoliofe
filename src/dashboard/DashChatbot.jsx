@@ -40,6 +40,7 @@ function DashChatbot() {
     embedding_google_api_key: '',
     groq_models: DEFAULT_GROQ_MODELS,
     google_models: DEFAULT_GOOGLE_MODELS,
+    system_prompt: '',
   });
   const [llmLoading, setLlmLoading] = useState(true);
   const [llmSaving, setLlmSaving] = useState(false);
@@ -325,6 +326,30 @@ function DashChatbot() {
               {PROVIDERS.find(p => p.id === llmForm.active_provider)?.name} Configuration
             </h3>
             {renderProviderFields()}
+          </div>
+
+          {/* System Prompt */}
+          <div className="glass-card" style={{ padding: 24, marginBottom: 20 }}>
+            <h3 className="card-title">💬 System Prompt</h3>
+            <p style={{ color: 'var(--text-secondary)', marginBottom: 12, fontSize: 14 }}>
+              Customize how the chatbot behaves and responds. Leave empty to use the default prompt.
+            </p>
+            <textarea
+              className="form-input system-prompt-textarea"
+              placeholder="Leave empty for default prompt. Example:&#10;You are Veera's Portfolio Assistant — a friendly AI that answers questions about Veerababu Pilli...&#10;&#10;RULES:&#10;1. ONLY answer questions related to Veera.&#10;2. If the user asks something not about Veera, politely redirect them.&#10;3. If context is missing, suggest contacting Veera at his email."
+              value={llmForm.system_prompt || ''}
+              onChange={e => u('system_prompt', e.target.value)}
+              rows={6}
+            />
+            {llmForm.system_prompt && (
+              <button
+                className="btn btn-sm"
+                style={{ marginTop: 8, fontSize: 12, opacity: 0.7 }}
+                onClick={() => u('system_prompt', '')}
+              >
+                Reset to Default
+              </button>
+            )}
           </div>
 
           {/* Common Settings */}

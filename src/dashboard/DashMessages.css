@@ -1,0 +1,50 @@
+.messages-container {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 20px;
+  min-height: 500px;
+}
+.messages-list {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  overflow-y: auto;
+  max-height: 70vh;
+}
+.messages-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  color: var(--text-secondary);
+  gap: 12px;
+}
+.message-item {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--glass-border);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.message-item:hover { background: rgba(108, 99, 255, 0.05); }
+.message-item.active { background: rgba(108, 99, 255, 0.1); border-left: 3px solid var(--primary); }
+.message-item.unread { background: rgba(108, 99, 255, 0.04); }
+.message-item-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+.message-sender { font-weight: 600; color: var(--text-primary); font-size: 0.95rem; }
+.unread-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--primary); }
+.message-subject { font-size: 0.85rem; color: var(--text-primary); margin-bottom: 4px; }
+.message-preview { font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4; }
+.message-item-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+.message-email { font-size: 0.75rem; color: var(--text-secondary); }
+.message-detail { padding: 28px; }
+.message-detail-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }
+.message-detail-header h3 { color: var(--text-primary); font-size: 1.2rem; }
+.message-detail-header a { color: var(--primary); font-size: 0.85rem; text-decoration: none; }
+.message-detail-subject { color: var(--text-primary); font-size: 1rem; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--glass-border); }
+.message-detail-body { color: var(--text-secondary); line-height: 1.8; font-size: 0.95rem; white-space: pre-wrap; margin-bottom: 24px; }
+.message-detail-meta { display: flex; align-items: center; gap: 8px; color: var(--text-secondary); font-size: 0.8rem; padding-top: 16px; border-top: 1px solid var(--glass-border); }
+
+@media (max-width: 768px) {
+  .messages-container { grid-template-columns: 1fr; }
+  .messages-list { max-height: 40vh; }
+}

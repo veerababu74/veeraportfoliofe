@@ -1,0 +1,270 @@
+/* ── Education: Two-Column Layout ── */
+.edu-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 8px;
+}
+
+.edu-column-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.edu-column-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.edu-icon-academic { background: linear-gradient(135deg, #8b5cf6, #6d28d9); }
+.edu-icon-cert { background: linear-gradient(135deg, #f59e0b, #d97706); }
+
+.edu-column-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* ── Timeline ── */
+.edu-timeline {
+  position: relative;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edu-timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary), transparent);
+  border-radius: 2px;
+}
+
+.edu-timeline-item {
+  position: relative;
+  padding: 24px;
+  text-align: left;
+}
+
+.edu-timeline-dot {
+  position: absolute;
+  left: -27px;
+  top: 28px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 3px solid var(--bg);
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.3);
+}
+
+.edu-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px;
+  margin-bottom: 12px;
+}
+
+.edu-degree {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.edu-institution {
+  font-size: 0.9rem;
+  color: var(--primary-light);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.edu-field {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.edu-date {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-family: var(--font-code);
+  margin-bottom: 6px;
+}
+
+.edu-grade-badge {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 12px;
+  background: rgba(108, 99, 255, 0.12);
+  color: var(--primary-light);
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.edu-desc {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-top: 4px;
+}
+
+.edu-placeholder {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 32px 0;
+  font-size: 0.9rem;
+}
+
+/* ── Certifications List ── */
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.cert-number {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: var(--font-code);
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.cert-content {
+  flex: 1;
+}
+
+.cert-badge {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.cert-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.cert-issuer {
+  font-size: 0.82rem;
+  color: var(--primary-light);
+  margin-bottom: 4px;
+}
+
+.cert-date {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-family: var(--font-code);
+  margin-bottom: 8px;
+}
+
+.cert-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-light);
+  padding: 4px 0;
+  transition: color 0.2s ease;
+}
+
+.cert-link:hover {
+  color: var(--primary);
+}
+
+/* ── Responsive ── */
+@media (max-width: 868px) {
+  .edu-two-col {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .edu-two-col {
+    gap: 32px;
+  }
+
+  .edu-column-header {
+    margin-bottom: 18px;
+  }
+
+  .edu-column-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 0.95rem;
+  }
+
+  .edu-column-title {
+    font-size: 1rem;
+  }
+
+  .edu-timeline-item {
+    padding: 16px;
+  }
+
+  .edu-degree {
+    font-size: 0.95rem;
+  }
+
+  .edu-institution {
+    font-size: 0.84rem;
+  }
+
+  .cert-item {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .cert-number {
+    width: 30px;
+    height: 30px;
+    font-size: 0.72rem;
+  }
+
+  .cert-title {
+    font-size: 0.88rem;
+  }
+
+  .cert-issuer {
+    font-size: 0.78rem;
+  }
+}

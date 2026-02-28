@@ -234,3 +234,72 @@
     height: 70vh;
   }
 }
+
+/* ─── Suggestion Chips ─── */
+.suggestion-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 4px 0 8px;
+}
+
+.suggestion-chip {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  background: rgba(108, 99, 255, 0.1);
+  color: var(--primary);
+  border: 1px solid rgba(108, 99, 255, 0.25);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.suggestion-chip:hover {
+  background: rgba(108, 99, 255, 0.2);
+  border-color: var(--primary);
+  transform: translateY(-1px);
+}
+
+/* ─── Formatted Message Styles ─── */
+.formatted-msg {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.formatted-msg .chat-para {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.formatted-msg .chat-bullet {
+  display: flex;
+  gap: 8px;
+  padding-left: 4px;
+  line-height: 1.5;
+}
+
+.formatted-msg .bullet-dot {
+  color: var(--primary);
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.formatted-msg strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.formatted-msg .chat-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.formatted-msg .chat-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}

@@ -9,6 +9,7 @@ import Projects from '../components/Projects';
 import Education from '../components/Education';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import ConnectionLoader from '../components/ConnectionLoader';
 
 function Home() {
   const [profile, setProfile] = useState(null);
@@ -67,24 +68,7 @@ function Home() {
   };
 
   if (loading) {
-    return (
-      <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
-        gap: 16,
-      }}>
-        <div className="animate-pulse-glow" style={{
-          width: 60,
-          height: 60,
-          borderRadius: '50%',
-          background: 'var(--gradient-primary)',
-        }} />
-        <p style={{ color: 'var(--text-muted)' }}>Loading portfolio...</p>
-      </div>
-    );
+    return <ConnectionLoader />;
   }
 
   return (

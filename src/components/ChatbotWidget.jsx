@@ -149,7 +149,7 @@ function ChatbotWidget() {
         onClick={() => setIsOpen(!isOpen)}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        animate={!isOpen ? { boxShadow: ['0 0 0 0px rgba(108,99,255,0.4)', '0 0 0 20px rgba(108,99,255,0)', '0 0 0 0px rgba(108,99,255,0.4)'] } : {}}
+        animate={!isOpen ? { boxShadow: ['0 0 0 0px rgba(46, 76, 245, 0.35)', '0 0 0 20px rgba(46, 76, 245, 0)', '0 0 0 0px rgba(46, 76, 245, 0.35)'] } : {}}
         transition={!isOpen ? { duration: 2, repeat: Infinity } : {}}
       >
         {isOpen ? <FiX size={24} /> : <FiMessageCircle size={24} />}

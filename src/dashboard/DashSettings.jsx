@@ -7,7 +7,7 @@ import { FiUploadCloud } from 'react-icons/fi';
 function DashSettings() {
   const [form, setForm] = useState({
     site_title: '', meta_description: '', favicon_url: '',
-    primary_color: '#6C63FF', secondary_color: '#FF6584',
+    primary_color: '#2E4CF5', secondary_color: '#1A1A2E',
     footer_text: '', google_analytics_id: '',
     chatbot_name: 'Portfolio Assistant', chatbot_avatar_url: '',
     chatbot_intro_message: "Hi! 👋 I'm the portfolio assistant. Ask me anything about the portfolio owner!",

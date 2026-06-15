@@ -26,9 +26,9 @@
   cursor: pointer;
   transition: background 0.2s;
 }
-.message-item:hover { background: rgba(108, 99, 255, 0.05); }
-.message-item.active { background: rgba(108, 99, 255, 0.1); border-left: 3px solid var(--primary); }
-.message-item.unread { background: rgba(108, 99, 255, 0.04); }
+.message-item:hover { background: rgba(46, 76, 245, 0.05); }
+.message-item.active { background: rgba(46, 76, 245, 0.1); border-left: 3px solid var(--primary); }
+.message-item.unread { background: rgba(46, 76, 245, 0.04); }
 .message-item-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
 .message-sender { font-weight: 600; color: var(--text-primary); font-size: 0.95rem; }
 .unread-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--primary); }

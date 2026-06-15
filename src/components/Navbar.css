@@ -9,11 +9,11 @@
 }
 
 .navbar-scrolled {
-  background: rgba(10, 10, 26, 0.9);
+  background: rgba(240, 244, 255, 0.94);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
   padding: 10px 0;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 24px rgba(26, 26, 46, 0.12);
 }
 
 .navbar-container {
@@ -53,7 +53,7 @@
 
 .nav-link:hover {
   color: var(--text-primary);
-  background: rgba(108, 99, 255, 0.1);
+  background: rgba(46, 76, 245, 0.1);
 }
 
 .nav-link.active {
@@ -97,8 +97,8 @@
 }
 
 .resume-view-btn:hover {
-  background: rgba(108, 99, 255, 0.1);
-  color: #fff;
+  background: rgba(46, 76, 245, 0.1);
+  color: var(--text-primary);
 }
 
 .resume-download-btn {
@@ -124,7 +124,7 @@
   display: none;
   flex-direction: column;
   padding: 16px 24px 24px;
-  background: rgba(10, 10, 26, 0.95);
+  background: rgba(240, 244, 255, 0.97);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
   overflow: hidden;
@@ -140,7 +140,7 @@
 
 .mobile-link:hover, .mobile-link.active {
   color: var(--primary-light);
-  background: rgba(108, 99, 255, 0.1);
+  background: rgba(46, 76, 245, 0.1);
 }
 
 .mobile-resume-btns {

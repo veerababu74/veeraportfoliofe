@@ -115,7 +115,7 @@
   width: 32px;
   height: 32px;
   border-radius: 10px;
-  background: rgba(108, 99, 255, 0.1);
+  background: rgba(46, 76, 245, 0.1);
   color: var(--primary-light);
   border: 1px solid transparent;
   cursor: pointer;
@@ -140,8 +140,8 @@
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--primary-light);
-  background: rgba(108, 99, 255, 0.08);
-  border: 1px solid rgba(108, 99, 255, 0.2);
+  background: rgba(46, 76, 245, 0.08);
+  border: 1px solid rgba(46, 76, 245, 0.2);
   cursor: pointer;
   transition: all 0.25s ease;
 }
@@ -153,8 +153,8 @@
 }
 
 .timeline-card.expanded {
-  border-color: rgba(108, 99, 255, 0.3);
-  box-shadow: 0 4px 20px rgba(108, 99, 255, 0.08);
+  border-color: rgba(46, 76, 245, 0.3);
+  box-shadow: 0 4px 20px rgba(46, 76, 245, 0.08);
 }
 
 .timeline-tags {

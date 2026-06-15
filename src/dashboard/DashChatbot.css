@@ -29,13 +29,13 @@
 }
 .chatbot-tab:hover {
   color: var(--text-primary);
-  background: rgba(108, 99, 255, 0.08);
+  background: rgba(46, 76, 245, 0.08);
 }
 .chatbot-tab.active {
-  background: rgba(108, 99, 255, 0.15);
+  background: rgba(46, 76, 245, 0.15);
   color: var(--primary-light);
   font-weight: 600;
-  border: 1px solid rgba(108, 99, 255, 0.25);
+  border: 1px solid rgba(46, 76, 245, 0.25);
 }
 
 /* ─── Provider Grid ─── */
@@ -61,13 +61,13 @@
 }
 .provider-card:hover {
   border-color: var(--provider-color, var(--primary));
-  background: rgba(108, 99, 255, 0.05);
+  background: rgba(46, 76, 245, 0.05);
   transform: translateY(-2px);
 }
 .provider-card.active {
   border-color: var(--provider-color, var(--primary));
-  background: rgba(108, 99, 255, 0.1);
-  box-shadow: 0 4px 20px rgba(108, 99, 255, 0.15);
+  background: rgba(46, 76, 245, 0.1);
+  box-shadow: 0 4px 20px rgba(46, 76, 245, 0.15);
 }
 .provider-icon {
   font-size: 2rem;
@@ -126,14 +126,14 @@
   width: 40px;
   height: 40px;
   border-radius: 8px;
-  background: rgba(108, 99, 255, 0.1);
+  background: rgba(46, 76, 245, 0.1);
   color: var(--primary-light);
   border: 1px solid var(--border);
   flex-shrink: 0;
   transition: var(--transition);
 }
 .secret-toggle:hover {
-  background: rgba(108, 99, 255, 0.2);
+  background: rgba(46, 76, 245, 0.2);
 }
 
 /* ─── Field Hint ─── */
@@ -159,13 +159,13 @@
   padding: 5px 12px;
   border-radius: 20px;
   font-size: 0.8rem;
-  background: rgba(108, 99, 255, 0.1);
+  background: rgba(46, 76, 245, 0.1);
   color: var(--text-secondary);
   border: 1px solid var(--border);
   transition: var(--transition);
 }
 .model-tag.active {
-  background: rgba(108, 99, 255, 0.25);
+  background: rgba(46, 76, 245, 0.25);
   color: var(--primary);
   border-color: var(--primary);
   font-weight: 600;
@@ -186,7 +186,7 @@
 }
 .model-tag-delete:hover {
   background: rgba(255, 71, 87, 0.2);
-  color: #ff4757;
+  color: #2E4CF5;
 }
 .model-add-row {
   display: flex;
@@ -223,7 +223,7 @@
   border-radius: 3px;
   appearance: none;
   -webkit-appearance: none;
-  background: rgba(108, 99, 255, 0.2);
+  background: rgba(46, 76, 245, 0.2);
   outline: none;
   margin: 8px 0;
 }
@@ -234,7 +234,7 @@
   border-radius: 50%;
   background: var(--primary);
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(108, 99, 255, 0.4);
+  box-shadow: 0 2px 8px rgba(46, 76, 245, 0.4);
 }
 .range-labels {
   display: flex;
@@ -292,7 +292,7 @@
   align-items: end;
   margin-top: 12px;
   padding: 16px;
-  background: rgba(108, 99, 255, 0.05);
+  background: rgba(46, 76, 245, 0.05);
   border-radius: 10px;
   border: 1px solid var(--border);
 }
@@ -327,14 +327,14 @@
   font-size: 0.9rem;
 }
 .chatbot-result.success {
-  background: rgba(0, 212, 170, 0.1);
+  background: rgba(107, 126, 197, 0.1);
   color: var(--accent);
-  border: 1px solid rgba(0, 212, 170, 0.2);
+  border: 1px solid rgba(107, 126, 197, 0.2);
 }
 .chatbot-result.error {
-  background: rgba(255, 101, 132, 0.1);
+  background: rgba(26, 26, 46, 0.1);
   color: var(--secondary);
-  border: 1px solid rgba(255, 101, 132, 0.2);
+  border: 1px solid rgba(26, 26, 46, 0.2);
 }
 
 /* ─── Danger Card ─── */
@@ -349,16 +349,16 @@
   align-items: center;
   gap: 6px;
   padding: 10px 20px;
-  background: rgba(255, 101, 132, 0.15);
+  background: rgba(26, 26, 46, 0.15);
   color: var(--secondary);
-  border: 1px solid rgba(255, 101, 132, 0.3);
+  border: 1px solid rgba(26, 26, 46, 0.3);
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
   transition: all 0.2s;
 }
 .btn-danger:hover {
-  background: rgba(255, 101, 132, 0.25);
+  background: rgba(26, 26, 46, 0.25);
 }
 
 /* ─── Tips Card ─── */
@@ -449,7 +449,7 @@
   border-radius: 12px;
   font-size: 0.7rem;
   font-weight: 600;
-  background: rgba(108, 99, 255, 0.15);
+  background: rgba(46, 76, 245, 0.15);
   color: var(--primary-light);
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -484,12 +484,12 @@
 .chunk-btn.expand:hover {
   color: var(--primary-light);
   border-color: var(--primary);
-  background: rgba(108, 99, 255, 0.1);
+  background: rgba(46, 76, 245, 0.1);
 }
 .chunk-btn.delete:hover {
   color: var(--secondary);
   border-color: var(--secondary);
-  background: rgba(255, 101, 132, 0.1);
+  background: rgba(26, 26, 46, 0.1);
 }
 
 /* ─── Chunk Text ─── */

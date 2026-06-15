@@ -33,7 +33,7 @@ function Footer({ profile, settings }) {
           <p className="footer-text">
             {settings?.footer_text || (
               <>
-                Made with <FiHeart style={{ color: 'var(--secondary)', verticalAlign: 'middle' }} /> by {profile?.full_name || 'Developer'}
+                Made with <FiHeart style={{ color: 'var(--primary)', verticalAlign: 'middle' }} /> by {profile?.full_name || 'Developer'}
               </>
             )}
           </p>
